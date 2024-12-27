@@ -1,0 +1,95 @@
+.puzzle-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    margin-top: 20px;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .start-button,
+  .auto-solve-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .start-button.start {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  .start-button.stop {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  .auto-solve-button {
+    background-color: #2196f3;
+    color: white;
+  }
+  
+  .time-input {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .timer {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    grid-gap: 5px;
+  }
+  
+  .tile {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .tile:hover {
+    transform: scale(1.1);
+  }
+  
+  .tile.empty {
+    background-color: #e0e0e0;
+    cursor: default;
+  }
+  
+  .tile:not(.empty) {
+    background-color: #2196f3;
+    color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  .message {
+    font-size: 1.5rem;
+    color: #4caf50;
+    margin-top: 20px;
+  }
+  
